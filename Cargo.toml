@@ -1,0 +1,15 @@
+[package]
+	authors     = ["Ian Pratt <ianjdpratt@gmail.com>"]
+	description = "A program (written in Rust) that can solve a standard Sudoku puzzle (9x9)."
+	edition     = "2021"
+	license     = "MIT"
+	name        = "sudoku-solver"
+	version     = "0.1.0"
+
+	# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+	name = "sudoku"
+	path = "src/lib/mod.rs"
+
+[dependencies]
