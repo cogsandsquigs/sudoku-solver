@@ -11,8 +11,13 @@ pub struct Sudoku {
 
 /// Private API for the sudoku board.
 impl Sudoku {
+    /// Get a single number at a point.
+    fn get_number(&self, point: Point) -> u8 {
+        self.board[(point.x() + point.y() * 9) as usize]
+    }
+
     /// Get all the numbers in the column some number occupies
-    fn column_numbers(point: Point) -> Vec<u8> {
+    fn column_numbers(&self, point: Point) -> Vec<u8> {
         todo!()
     }
 }
